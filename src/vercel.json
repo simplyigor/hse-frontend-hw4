@@ -1,5 +1,5 @@
 {
     "rewrites": [
-      {"source": "/tasks", "destination": ""}
+      {"source": "/tasks", "destination": "https://hse-frontend-hw4.vercel.app/tasks.html"}
     ]
   }
