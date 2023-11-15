@@ -1,5 +1,7 @@
 {
     "rewrites": [
-      {"source": "/tasks", "destination": "https://hse-frontend-hw4.vercel.app/tasks.html"}
+      {"source": "/index", "destination": "https://hse-frontend-hw4.vercel.app"},
+      {"source": "/tasks", "destination": "https://hse-frontend-hw4.vercel.app/tasks.html"},
+      {"source": "/mentors", "destination": "https://hse-frontend-hw4.vercel.app/mentors.html"}
     ]
   }
