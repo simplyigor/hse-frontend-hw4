@@ -1,0 +1,342 @@
+.upcoming-tasks-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+}
+
+.upcoming-tasks-box__header {
+    display: flex;
+    width: 688px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 602px;
+    margin-left: 310px;
+}
+
+.upcoming-tasks-box__header_text {
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%;
+    letter-spacing: -0.72px;
+}
+
+.upcoming-tasks-box__header_icons-both {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: 1; 
+}
+
+.upcoming-tasks-box__cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;    
+}
+
+/* Левая карточка */
+
+.upcoming-tasks-box__cards_left-card {
+    position: absolute;
+    background-color: var(--primary-dark-byzantine-blue);
+    border-radius: 10px;
+    width: 328px;
+    height: 314px;
+    margin-left: 310px;
+}
+
+/* Левая карточка - картинка */
+
+.upcoming-tasks-box__cards_left-card-picture {
+    width: 280px;
+    height: 110px;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-left: 24px;
+    background: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Левая карточка - progress */
+
+.upcoming-tasks-box__cards_left-card__progress-bar-light-blue {
+    width: 280px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--primary-lavender-blue);
+    margin-top: 12px;
+    margin-left: 24px;
+}
+
+.upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: var(--primary-nebula-blue);
+    border: 2px solid var(--primary-anti-flash-white);
+    border-radius: 50%;
+    margin-left: 202px;
+    margin-top: -4px;
+}
+
+.upcoming-tasks-box__cards_left-card__progress-bar-dark-blue {
+    width: 210px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 8px 0px 0px 8px;
+    background: var(--primary-nebula-blue);
+    position: absolute;
+}
+
+/* Правая карточка */
+
+.upcoming-tasks-box__cards_right-card {
+    position: absolute;
+    background-color: var(--primary-dark-byzantine-blue);
+    border-radius: 10px;
+    width: 328px;
+    height: 314px;
+    margin-left: 670px;
+}
+
+/* Правая карточка - картинка */
+
+.upcoming-tasks-box__cards_right-card-picture {
+    width: 280px;
+    height: 110px;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-left: 24px;
+    background: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Правая карточка - progress */
+
+.upcoming-tasks-box__cards_right-card__progress-bar-light-blue {
+    width: 280px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--primary-lavender-blue);
+    margin-top: 12px;
+    margin-left: 24px;
+}
+
+.upcoming-tasks-box__cards_right-card__progress-bar-dark-blue {
+    width: 240px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 8px 0px 0px 8px;
+    background: var(--primary-nebula-blue);
+    position: absolute;
+}
+
+.upcoming-tasks-box__cards_right-card__progress-bar-light-blue__circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: var(--primary-nebula-blue);
+    border: 2px solid var(--primary-anti-flash-white);
+    border-radius: 50%;
+    margin-left: 232px;
+    margin-top: -4px;
+}
+
+/* Третья карточка */
+
+.upcoming-tasks-box__cards_third-card {
+    position: absolute;
+    background-color: var(--primary-dark-byzantine-blue);
+    border-radius: 10px;
+    width: 328px;
+    height: 314px;
+    margin-left: 1026px;     
+}
+
+/* Общее оформление карточек */
+
+.upcoming-tasks-box__cards_card__text-wrap {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 24px;   
+}
+
+.upcoming-tasks-box__cards_card__text-wrap-title {
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    z-index: 1;     
+}
+
+.upcoming-tasks-box__cards_card__text-wrap-subtitle {
+    color: var(--secondary-grey);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: normal;
+    letter-spacing: -0.24px;
+    z-index: 1;   
+}
+
+.upcoming-tasks-box__cards_card__progress {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.upcoming-tasks-box__cards_card__progress-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 128px;
+    margin-top: 32px;
+    margin-left: 24px;    
+}
+
+.upcoming-tasks-box__cards_card__progress-header_left-text {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px;
+}
+
+.upcoming-tasks-box__cards_card__progress-header_right-text {
+    display: flex;
+    width: 52px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-nebula-blue);
+    text-align: right;
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px;    
+}
+
+.upcoming-tasks-box__cards_card__deadline {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 16px;
+    margin-left: 24px;    
+}
+
+.upcoming-tasks-box__cards_card__deadline-icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 2.75px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.upcoming-tasks-box__cards_card__deadline-text {
+    display: flex;
+    width: 92px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px;    
+}
+
+.upcoming-tasks-box__cards_card__photos {
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 72px;
+    z-index: 1;
+}
+
+.upcoming-tasks-box__cards_card__photos_single {
+    margin-left: -8px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 200px;
+    border: 1.5px solid var(--primary-anti-flash-white);
+    background:lightgray 50% / cover no-repeat;
+}
+
+/* Стили для экрана Tasks */
+
+.second-screen {
+    width: 1048px;
+    gap: 800px;
+}
+
+.third-card-dark-blue {
+    width: 280px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.third-card-circle {
+    margin-left: 264px;
+
+}
+
+.time-limited {
+    margin-top: -400px;
+}
+
+/* Псевдокласс hover */
+
+.upcoming-tasks-box__header_icons-both:hover {
+    cursor: pointer;
+}
+
+.upcoming-tasks-box__cards_card__photos:hover {
+    cursor: pointer;
+}
+
+.upcoming-tasks-box__cards_card__text-wrap-title, .upcoming-tasks-box__cards_card__text-wrap-subtitle:hover {
+    cursor: pointer;
+}
+
+/* Отображение на экранах меньше 1100px */
+
+@media screen and (max-width: 1100px) {
+    .upcoming-tasks-box  {
+      margin-left: -140px;
+    }
+    .upcoming-tasks-box__cards_third-card {
+        display: none;
+    }
+    .second-screen {
+        width: 694px;
+        gap: 440px;
+    }
+}

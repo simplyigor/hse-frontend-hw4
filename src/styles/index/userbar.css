@@ -1,0 +1,74 @@
+.userbar-box {
+  position: absolute;
+  background-color: var(--primary-dark-byzantine-blue);
+  border-radius: 16px;
+  width: 688px; 
+  height: 132px;
+  margin-left: 310px;
+} 
+
+.userbar-box__left-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  margin: 30px 41px 30px 41px;
+}
+
+.userbar-box__left-content .userbar-box__left-content-main-text {
+  position: relative;
+  width: 216px;
+  margin-top: -1px;
+  font-family: var(--font-family-plus-jakarta);
+  font-weight: var(--font-weight-normal);
+  color: var(--primary-magnolia-white);
+  font-size: var(--font-size-xl);
+  letter-spacing: -0.72px;
+  line-height: 150%;
+  font-style: normal;
+}
+
+.userbar-box__left-content .userbar-box__left-content-subtext {
+  position: relative;
+  width: 236px;
+  height: 28px;
+  font-family: var(--font-family-plus-jakarta);
+  font-weight: var(--font-weight-light);
+  color: var(--secondary-grey);
+  font-size: var(--font-size-m);
+  letter-spacing: -0.32px;
+  line-height: 150%;
+  font-style: normal;
+}
+
+.userbar-box .userbar-box__right-content__icon {
+  position: absolute;
+  margin-left: 546px;
+  margin-top: 53.92px;
+  z-index: 1;
+}
+
+.userbar-box .userbar-box__right-content__profile {
+  width: 62px;
+  height: 62px;
+  margin-left: 597px;
+  margin-top: 35px;
+  border-radius: 200px;
+  background: cover no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Псевдокласс hover */
+
+.userbar-box__right-content__icon:hover {
+  cursor: pointer;
+} 
+
+/* Отображение на экранах меньше 1100px */
+
+@media screen and (max-width: 1100px) {
+  .userbar-box {
+    margin-left: 170px;
+  }
+}

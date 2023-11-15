@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Тег для корректного отображения интерфейса на безрамочных смартфонах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="styles/index/main.css">
+    <link rel="stylesheet" href="styles/index/reset.css">
+    <link rel="stylesheet" href="styles/index/userbar.css">
+    <link rel="stylesheet" href="styles/index/sidebar.css">
+    <link rel="stylesheet" href="styles/index/calendar.css">
+    <link rel="stylesheet" href="styles/index/activity.css">
+    <link rel="stylesheet" href="styles/index/task_today.css">
+    <link rel="stylesheet" href="styles/index/running_task.css">
+    <link rel="stylesheet" href="styles/index/upcoming_tasks.css">
+    <link rel="stylesheet" href="styles/index/monthly_mentors.css">
+
+    <!-- Стили специфичные для этой страницы -->
+    <link rel="stylesheet" href="styles/tasks/explore-tasks.css">
+
+    <!-- Фавиконка и заголовок документа -->
+    <title>Task Manager</title>
+
+  </head>
+  <body>
+    <!-- Секция Explore Tasks -->
+    <div class = "explore-tasks">
+      <div class = "explore-tasks-header">
+        <p class = "explore-tasks-header-left-text">Explore Tasks</p>
+        <div class = explore-tasks-header-right-wrapper>
+          <img class = "explore-tasks-header-right-wrapper-icon" src="assets/icons/notif.svg" />
+          <img class = "explore-tasks-header-right-wrapper-profile" src="assets/images/profile_pic.jpeg">
+        </div>
+      </div>
+      <div class = "explore-tasks-form">
+        <input class = "explore-tasks-form-search-bar" type = "text" placeholder = "Search Task" maxlength = "100">
+        <img class = "explore-tasks-form-icon" src="assets/icons/search.svg" />    
+      </div>
+      <div class = "explore-tasks-filter-block">
+        <div class = "explore-tasks-filter-block-category">
+          <img class = "explore-tasks-filter-block-category-icon" src="assets/icons/category.svg" />
+          <p class = "explore-tasks-filter-block-category-text">Category</p>
+        </div>
+        <div class = "explore-tasks-filter-block-sort">
+          <img class = "explore-tasks-filter-block-sort-icon" src="assets/icons/sort.svg" />
+          <p class = "explore-tasks-filter-block-sort-text">Sort By: Deadline</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция Time Limited -->
+    <div class = "time-limited upcoming-tasks-box">
+      <div class = "second-screen upcoming-tasks-box__header">
+        <p class = "upcoming-tasks-box__header_text">Time Limited</p>
+        <div class = "upcoming-tasks-box__header_icons-both">
+          <img class = "upcoming-tasks-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+          <img class = "upcoming-tasks-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+      </div>
+
+      <!-- Секция Time Limited - левая карточка -->
+      <div class = "upcoming-tasks-box__cards">
+        <div class = "upcoming-tasks-box__cards_left-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776063328-153b13e3c245?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Mobile App Design</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция Time Limited - левая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">75%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция Time Limited - левая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">1 Hour</p>
+          </div>
+          <!-- Секция Time Limited - левая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>
+        </div>
+
+        <!-- Секция Time Limited - правая карточка -->
+        <div class = "upcoming-tasks-box__cards_right-card">
+          <img class = "upcoming-tasks-box__cards_right-card-picture" src = "https://images.unsplash.com/photo-1635776062764-e025521e3df3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Perfect Website</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">Web Development</p>
+          </div>
+          <!-- Секция Time Limited - правая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">85%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue">
+              <div class = "upcoming-tasks-box__cards_right-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>            
+          </div>
+          <!-- Секция Time Limited - правая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">2 Hours</p>
+          </div>
+          <!-- Секция Time Limited - правая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>          
+        </div>
+      
+        <!-- Секция Time Limited - 3 карточка -->
+        <div class = "upcoming-tasks-box__cards_third-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776063043-ab23b4c226f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Color Palletes</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция Time Limited - 3 карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Success</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">100%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "third-card-dark-blue upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "third-card-circle upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция Time Limited - 3 карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">1 Hour</p>
+          </div>
+          <!-- Секция Time Limited - 3 карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция New Tasks -->
+    <div class = "upcoming-tasks-box">
+      <div class = "second-screen upcoming-tasks-box__header">
+        <p class = "upcoming-tasks-box__header_text">New Tasks</p>
+        <div class = "upcoming-tasks-box__header_icons-both">
+          <img class = " upcoming-tasks-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+          <img class = " upcoming-tasks-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+      </div>
+
+      <!-- Секция New Tasks - левая карточка -->
+      <div class = "upcoming-tasks-box__cards">
+        <div class = "upcoming-tasks-box__cards_left-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Mobile App Design</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция New Tasks - левая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">75%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция New Tasks - левая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">3 Days</p>
+          </div>
+          <!-- Секция New Tasks - левая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>
+        </div>
+
+        <!-- Секция New Tasks - правая карточка -->
+        <div class = "upcoming-tasks-box__cards_right-card">
+          <img class = "upcoming-tasks-box__cards_right-card-picture" src = "https://images.unsplash.com/photo-1635776062360-af423602aff3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Perfect Website</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">Web Development</p>
+          </div>
+          <!-- Секция New Tasks - правая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">85%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue">
+              <div class = "upcoming-tasks-box__cards_right-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>            
+          </div>
+          <!-- Секция New Tasks - правая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">4 Days</p>
+          </div>
+          <!-- Секция New Tasks - правая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>          
+        </div>
+      
+        <!-- Секция New Tasks - 3 карточка -->
+        <div class = "upcoming-tasks-box__cards_third-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1635776064096-4e12cce9ead4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Color Palletes</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция New Tasks - 3 карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Success</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">100%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "third-card-dark-blue upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "third-card-circle upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция New Tasks - 3 карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">3 Days</p>
+          </div>
+          <!-- Секция New Tasks - 3 карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция с сайдбаром и логотипом -->
+    <div class = "sidebar-second-screen sidebar-box">
+      <div class = "sidebar-box-logo">
+        <img class = "sidebar-box-logo__icon" src="assets/icons/book-square.svg" />
+        <div class = "sidebar-box-logo__text">Task<br />MANAGER</div>
+        <nav class = "sidebar-box__navigation">
+          <a class = "sidebar-box__navigation-item" href = "/index">
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Overview</div> 
+            </div> 
+          </a>
+          <!-- Навигация - Tasks (selected) -->
+          <a class = "sidebar-box__navigation-item__selected"  href = "/tasks"> 
+            <div class = "sidebar-box__navigation-item__selected_group">
+              <img class = "sidebar-box__navigation-item__selected_group__icon" src="assets/icons/task.svg" />
+              <div class = "sidebar-box__navigation-item__selected_group__text">Tasks</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/mentors"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/user_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Mentors</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/messages"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/message.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Messages</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/images"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/images_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Images</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/settings"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/settings_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Settings</div>               
+            </div>
+          </a>
+        </nav>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>  

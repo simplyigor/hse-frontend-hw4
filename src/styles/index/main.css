@@ -1,0 +1,49 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+
+    /* Шрифт */
+    --font-family-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+
+    /* Начертание шрифта */
+    --font-weight-extra-light: 400;
+    --font-weight-light: 500;
+    --font-weight-normal: 600;
+
+    /* Размер шрифта */
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 32px;
+
+    /* Цвета (в макете не было четких названий, поэтому наименования от меня */
+    --primary-dark-blue-bg: #1B1C31;
+    --primary-magnolia-white: #EBEDFA;
+    --primary-anti-flash-white: #EEEEEE;
+    --primary-nebula-blue: #546FFF;
+    --primary-nebula-blue-bg: #6076ff;
+    --primary-lavender-blue: #BAC8FF;
+    --primary-dark-byzantine-blue: #222338;
+    --secondary-eigengrau: #141522;
+    --secondary-grey: #EBEDFA80;
+  }
+
+  body {
+    background-color: var(--primary-dark-blue-bg);
+    margin: 0;
+  }
+  
+  a {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+  }

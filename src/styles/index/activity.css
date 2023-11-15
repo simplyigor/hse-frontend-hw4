@@ -1,0 +1,76 @@
+.activity-box {
+    position: absolute;
+    background-color: var(--primary-dark-byzantine-blue);
+    border-radius: 16px;
+    width: 462px;
+    height: 214px;
+    margin-top: 152px;
+    margin-left: 540px;
+  }
+
+.activity-box__left-text {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%;
+    letter-spacing: -0.32px;    
+}
+
+.activity-box__graph {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.activity-box__circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: var(--primary-anti-flash-white);
+    border: 4px solid var(--primary-nebula-blue);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 76px;
+    margin-left: 117px;
+}
+
+.activity-box__pop-up {
+    position: absolute;
+    display: inline-flex;
+    padding: 8px 18px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--primary-magnolia-white);
+    margin-top: 17px;
+    margin-left: 86px; 
+}
+
+.activity-box__pop-up__text {
+    color: var(--primary-dark-byzantine-blue);
+    text-align: center;
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%;
+    letter-spacing: -0.28px;
+}
+
+/* Псевдокласс hover */
+
+.activity-box__pop-up:hover {
+    cursor: pointer;
+}
+
+/* Отображение на экранах меньше 1100px */
+
+@media screen and (max-width: 1100px) {
+    .activity-box  {
+      margin-left: 395px;
+    }
+  }

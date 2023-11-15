@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Тег для корректного отображения интерфейса на безрамочных смартфонах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="styles/index/main.css">
+    <link rel="stylesheet" href="styles/index/reset.css">
+    <link rel="stylesheet" href="styles/index/userbar.css">
+    <link rel="stylesheet" href="styles/index/sidebar.css">
+    <link rel="stylesheet" href="styles/index/calendar.css">
+    <link rel="stylesheet" href="styles/index/activity.css">
+    <link rel="stylesheet" href="styles/index/task_today.css">
+    <link rel="stylesheet" href="styles/index/running_task.css">
+    <link rel="stylesheet" href="styles/index/upcoming_tasks.css">
+    <link rel="stylesheet" href="styles/index/monthly_mentors.css">
+    
+    <!-- Фавиконка и заголовок документа -->
+    <title>Task Manager</title>
+  </head>
+
+  <body>
+
+    <!-- Секция с приветствием пользователя -->
+    <div class = "userbar-box">
+      <div class = "userbar-box__left-content">
+      <div class="userbar-box__left-content-main-text">Hi, Skylar Dias</div>
+      <p class="userbar-box__left-content-subtext">Let's finish your tasks today!</p>
+      </div>
+      <div class="userbar-box__right-content">
+        <span class = "userbar-box__right-content">
+          <img class = "userbar-box__right-content__icon" src="assets/icons/notif.svg" />
+          <img class = "userbar-box__right-content__profile" src="assets/images/profile_pic.jpeg">
+        </span>
+      </div>
+    </div>
+
+    <!-- Секция с календарем -->
+    <div class = "calendar">
+      <div class = "calendar-header">
+        <img class = "calendar-header-left-icon" src="assets/icons/arrow-left.svg" />
+        <p class = "calendar-header-text">July 2022</p>
+        <img class = "calendar-header-right-icon" src="assets/icons/arrow-right.svg" />        
+      </div>
+      <div class = "calendar-dates">
+        <!-- Секция с календарем - Sunday -->
+        <div class = "first-date calendar-dates-single">
+          <p class = "calendar-dates-single-text">S</p>
+          <span class = "calendar-dates-single-circle">
+            <p class = "calendar-dates-single-circle-text">10</p>
+          </span>
+        </div>
+        <!-- Секция с календарем - Monday -->
+        <div class = "calendar-dates-single">
+          <p class = "calendar-dates-single-text">M</p>
+          <span class = "calendar-dates-single-circle">
+            <p class = "calendar-dates-single-circle-text">11</p>
+          </span>
+        </div>
+        <!-- Секция с календарем - Tuesday -->
+        <div class = "calendar-dates-single">
+          <p class = "calendar-dates-single-text">T</p>
+          <span class = "calendar-dates-single-circle">
+            <p class = "calendar-dates-single-circle-text">12</p>
+          </span>
+        </div>
+        <!-- Секция с календарем - Wednesday -->
+        <div class = "calendar-dates-single">
+          <p class = "calendar-dates-single-text">W</p>
+          <span class = "calendar-dates-single-circle">
+            <p class = "calendar-dates-single-circle-text">13</p>
+          </span>
+        </div>
+        <!-- Секция с календарем - Thursday (current date) -->
+        <div class = "calendar-dates-single">
+          <p class = "calendar-dates-single-text">T</p>
+          <span class = "calendar-dates-single-circle-current">
+            <p class = "calendar-dates-single-circle-text-current">14</p>
+          </span>
+        </div>
+        <!-- Секция с календарем - Friday -->
+        <div class = "calendar-dates-single">
+          <p class = "calendar-dates-single-text">F</p>
+          <span class = "calendar-dates-single-circle">
+            <p class = "calendar-dates-single-circle-text">15</p>
+          </span>
+        </div>
+        <!-- Секция с календарем - Saturday -->
+        <div class = "calendar-dates-single">
+          <p class = "calendar-dates-single-text">S</p>
+          <span class = "calendar-dates-single-circle">
+            <p class = "calendar-dates-single-circle-text">16</p>
+          </span>
+        </div>     
+      </div>
+    </div>
+
+    <!-- Секция Task Today -->
+    <div class = "task-today">
+      <span class = "task-today-divider"></span>
+      <div class = "task-today-header">
+        <p class = "task-today-header-text">Today</p>
+        <img class = "task-today-header-icon" src="assets/icons/three_dots.svg" />
+      </div>
+      <img class = "task-today-image" src = "https://images.unsplash.com/photo-1568584263125-bf8f0a77d51c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2942&q=80">
+      <div class = "task-today__text-wrap">
+        <p class = "task-today__text-wrap-title">Creating Awesome Mobile Apps</p>
+        <p class = "task-today__text-wrap-subtitle">UI / UX Designer</p>
+      </div>
+      <!-- Секция Task Today - progress bar -->
+      <div class = "task-today__progress">
+        <div class = "task-today__progress-header">
+          <p class = "task-today__progress-header_left-text">Progress</p>
+          <p class = "task-today__progress-header_right-text">90%</p>
+        </div>
+        <div class = "task-today__progress__progress-bar-light-blue"> 
+          <div class = "task-today__progress__progress-bar-dark-blue">
+            <span class = "task-today__progress__progress-bar-light-blue__circle"></span>
+          </div>
+        </div>           
+      </div>
+      <!-- Секция Task Today - deadline -->
+      <div class = "task-today__deadline">
+        <img class = "task-today__deadline-icon" src="assets/icons/clock.svg" />
+        <p class = "task-today__deadline-text">1 Hour</p>
+      </div>
+      <div class = "task-today__photos">
+        <img class = "task-today__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+        <img class = "task-today__photos_single" src="assets/images/avatar_watermelon.jpeg">
+        <img class = "task-today__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+        <img class = "task-today__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+        <img class = "task-today__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+      </div>
+      <!-- Секция Task Today - details -->
+      <div class = "task-today-details-header">
+        <p class = "task-today-details-header-left-text">Task Details</p>
+        <p class = "task-today-details-header-right-text">UI / UX Designer</p>
+      </div>
+      <!-- Details - задача №1 -->
+      <div class = "task-today-details-wrap">
+        <span class = "task-today-details-wrap-number-bg">
+          <p class = "task-today-details-wrap-number-bg-text">1</p>
+        </span>
+        <p class = "task-today-details-wrap-text">Understand how tools in Figma work</p>
+      </div>
+      <!-- Details - задача №2 -->
+      <div class = "task-today-details-wrap">
+        <span class = "task-today-details-wrap-number-bg">
+          <p class = "task-today-details-wrap-number-bg-text">2</p>
+        </span>
+        <p class = "task-today-details-wrap-text">Understand the basics of UCD</p>
+      </div>
+      <!-- Details - задача №3 -->
+      <div class = "task-today-details-wrap">
+        <span class = "task-today-details-wrap-number-bg">
+          <p class = "task-today-details-wrap-number-bg-text">3</p>
+        </span>
+        <p class = "task-today-details-wrap-text">Design a mobile application with Figma</p>
+      </div>
+      <button class = "task-today-button">Details</button>
+    </div>
+
+    <!-- Секция Running Task -->
+    <div class = "running-task-box">
+      <img class = "running-task-box__arrow" src="assets/icons/arrow.svg" />
+      <p class = "running-task-box__text">Running Task</p>
+      <img class = "running-task-box__chart" src="assets/images/chart.svg" />
+      <p class = "running-task-box__percentage">45%</p>
+      <p class = "running-task-box__numbers-text">90 / 200</p>
+    </div>
+
+    <!-- Секция Activity -->
+    <div class = "activity-box"> 
+      <p class = "activity-box__left-text">Activity</p>
+      <img class = "activity-box__graph" src="assets/images/graph.svg" /> <!-- Здесь график в виде SVG-шки, простите, не был уверен в том, как сделать эту часть правильно :( -->
+      <span class = "activity-box__circle"></span>
+      <div class = "activity-box__pop-up">
+        <p class = "activity-box__pop-up__text">2 Task</p>
+      </div>
+    </div>
+
+    <!-- Секция Monthly Mentors -->
+    <div class = "monthly-mentors-box">
+      <div class = "monthly-mentors-box__header">
+        <p class = "monthly-mentors-box__header_text">Monthly Mentors</p>
+        <div class = "monthly-mentors-box__header_icons-both">
+          <img class = "monthly-mentors-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+          <img class = "monthly-mentors-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+      </div>
+      <!-- Секция Monthly Mentors - левая карточка -->      
+      <div class = "monthly-mentors-box__cards">
+        <div class = "monthly-mentors-box__cards_left-card">
+          <div class = "monthly-mentors-box__cards_card__profile">
+            <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_beard.jpeg">
+            <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+              <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Curious George</p>
+              <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">UI UX Design</p>
+            </div>
+              <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+          </div>
+          <div class = "monthly-mentors-box__cards_card__profile-courses">
+            <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+            <p class = "monthly-mentors-box__cards_card__profile-courses-text">40 Tasks</p> 
+          </div>
+          <div class = "monthly-mentors-box__cards_card__reviews">
+            <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+            <p class = "monthly-mentors-box__cards_card__reviews-text">4,7 (750 Reviews)</p>
+          </div>
+        </div>
+        <!-- Секция Monthly Mentors - правая карточка -->
+        <div class = "monthly-mentors-box__cards_right-card">
+            <div class = "monthly-mentors-box__cards_card__profile">
+              <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_long_hair.png">
+              <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Abraham Lincoln</p>
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">3D Design</p>
+              </div>
+                <p class = "monthly-mentors-box__cards_right-card__profile-follow">Followed</p>
+            </div>
+            <div class = "monthly-mentors-box__cards_card__profile-courses">
+              <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+              <p class = "monthly-mentors-box__cards_card__profile-courses-text">32 Tasks</p> 
+            </div>
+            <div class = "monthly-mentors-box__cards_card__reviews">
+              <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+              <p class = "monthly-mentors-box__cards_card__reviews-text">4,9 (510 Reviews)</p>
+            </div>
+        </div>  
+      </div>
+    </div>
+
+    <!-- Секция Upcoming Tasks -->
+    <div class = "upcoming-tasks-box">
+      <div class = "upcoming-tasks-box__header">
+        <p class = "upcoming-tasks-box__header_text">Upcoming Tasks</p>
+        <div class = "upcoming-tasks-box__header_icons-both">
+          <img class = "upcoming-tasks-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+          <img class = "upcoming-tasks-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+      </div>
+      <!-- Секция Upcoming Tasks - левая карточка -->
+      <div class = "upcoming-tasks-box__cards">
+        <div class = "upcoming-tasks-box__cards_left-card">
+          <img class = "upcoming-tasks-box__cards_left-card-picture" src = "https://images.unsplash.com/photo-1602576666092-bf6447a729fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Mobile App Design</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">UI UX Design</p>
+          </div>
+          <!-- Секция Upcoming Tasks - левая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">75%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue"> 
+              <div class = "upcoming-tasks-box__cards_left-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_left-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>           
+          </div>
+          <!-- Секция Upcoming Tasks - левая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">3 Days</p>
+          </div>
+          <!-- Секция Upcoming Tasks - левая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>
+        </div>
+        <!-- Секция Upcoming Tasks - правая карточка -->
+        <div class = "upcoming-tasks-box__cards_right-card">
+          <img class = "upcoming-tasks-box__cards_right-card-picture" src = "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2952&q=80">
+          <div class = "upcoming-tasks-box__cards_card__text-wrap">
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-title">Creating Perfect Website</p>
+            <p class = "upcoming-tasks-box__cards_card__text-wrap-subtitle">Web Development</p>
+          </div>
+          <!-- Секция Upcoming Tasks - правая карточка - progress -->
+          <div class = "upcoming-tasks-box__cards_card__progress">
+            <div class = "upcoming-tasks-box__cards_card__progress-header">
+              <p class = "upcoming-tasks-box__cards_card__progress-header_left-text">Progress</p>
+              <p class = "upcoming-tasks-box__cards_card__progress-header_right-text">85%</p>
+            </div>
+            <div class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue">
+              <div class = "upcoming-tasks-box__cards_right-card__progress-bar-dark-blue">
+                <span class = "upcoming-tasks-box__cards_right-card__progress-bar-light-blue__circle"></span>
+              </div>
+            </div>            
+          </div>
+          <!-- Секция Upcoming Tasks - правая карточка - deadline -->
+          <div class = "upcoming-tasks-box__cards_card__deadline">
+            <img class = "upcoming-tasks-box__cards_card__deadline-icon" src="assets/icons/clock.svg" />
+            <p class = "upcoming-tasks-box__cards_card__deadline-text">4 Days</p>
+          </div>
+          <!-- Секция Upcoming Tasks - правая карточка - фотографии -->
+          <div class = "upcoming-tasks-box__cards_card__photos">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_and_leaves.png">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_watermelon.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_sunglasses.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_red_hair.jpeg">
+            <img class = "upcoming-tasks-box__cards_card__photos_single" src="assets/images/avatar_woman_black_hair.jpeg">
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция с сайдбаром и логотипом -->
+    <div class = "sidebar-box">
+      <div class = "sidebar-box-logo">
+        <img class = "sidebar-box-logo__icon" src="assets/icons/book-square.svg" />
+        <div class = "sidebar-box-logo__text">Task<br />MANAGER</div>
+        <!-- Навигация - Overview (selected) -->
+        <nav class = "sidebar-box__navigation">
+          <a class = "sidebar-box__navigation-item__selected" href = "/index">
+            <div class = "sidebar-box__navigation-item__selected_group">
+              <img class = "sidebar-box__navigation-item__selected_group__icon" src="assets/icons/icon.svg" />
+              <div class = "sidebar-box__navigation-item__selected_group__text">Overview</div> 
+            </div> 
+          </a>
+          <!-- Навигация - Tasks (not selected) -->
+          <a class = "sidebar-box__navigation-item"  href = "/tasks"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/task.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Tasks</div>               
+            </div>
+          </a>
+          <!-- Навигация - Mentors (not selected) -->
+          <a class = "sidebar-box__navigation-item" href = "/mentors"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/user_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Mentors</div>               
+            </div>
+          </a>
+          <!-- Навигация - Messages (not selected) -->
+          <a class = "sidebar-box__navigation-item" href = "/messages"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/message.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Messages</div>               
+            </div>
+          </a>
+          <!-- Навигация - Images (not selected) -->
+          <a class = "sidebar-box__navigation-item" href = "/images"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/images_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Images</div>               
+            </div>
+          </a>
+          <!-- Навигация - Settings (not selected) -->
+          <a class = "sidebar-box__navigation-item" href = "/settings"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/settings_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Settings</div>               
+            </div>
+          </a>
+        </nav>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>  

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Тег для корректного отображения интерфейса на безрамочных смартфонах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="styles/index/main.css">
+    <link rel="stylesheet" href="styles/index/reset.css">
+    <link rel="stylesheet" href="styles/index/userbar.css">
+    <link rel="stylesheet" href="styles/index/sidebar.css">
+    <link rel="stylesheet" href="styles/index/calendar.css">
+    <link rel="stylesheet" href="styles/index/activity.css">
+    <link rel="stylesheet" href="styles/index/task_today.css">
+    <link rel="stylesheet" href="styles/index/running_task.css">
+    <link rel="stylesheet" href="styles/tasks/explore-tasks.css">
+    <link rel="stylesheet" href="styles/index/upcoming_tasks.css">
+    <link rel="stylesheet" href="styles/index/monthly_mentors.css">
+
+    <!-- Заголовок документа -->
+    <title>Task Manager</title>
+
+  </head>
+  <body>
+
+    <!-- Секция Explore Mentors -->
+    <div class = "explore-tasks">
+      <div class = "explore-tasks-header">
+        <p class = "explore-tasks-header-left-text">Explore Mentors</p>
+        <div class = explore-tasks-header-right-wrapper>
+          <img class = "explore-tasks-header-right-wrapper-icon" src="assets/icons/notif.svg" />
+          <img class = "explore-tasks-header-right-wrapper-profile" src="assets/images/profile_pic.jpeg">
+        </div>
+      </div>
+      <div class = "explore-tasks-form">
+        <input class = "explore-tasks-form-search-bar" type = "text" placeholder = "Explore Mentors" maxlength = "100">
+        <img class = "explore-tasks-form-icon" src="assets/icons/search.svg" />    
+      </div>
+      <div class = "explore-tasks-filter-block">
+        <div class = "explore-tasks-filter-block-category">
+          <img class = "explore-tasks-filter-block-category-icon" src="assets/icons/category.svg" />
+          <p class = "explore-tasks-filter-block-category-text">Category</p>
+        </div>
+        <div class = "explore-tasks-filter-block-sort">
+          <img class = "explore-tasks-filter-block-sort-icon" src="assets/icons/sort.svg" />
+          <p class = "explore-tasks-filter-block-sort-text">Sort By: Reviews</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Секция Recent Mentors -->
+    <div class = "recent-mentors monthly-mentors-box">
+        <div class = "third-screen monthly-mentors-box__header">
+        <p class = "monthly-mentors-box__header_text">Recent Mentors</p>
+        <div class = "monthly-mentors-box__header_icons-both">
+            <img class = "hover-icon monthly-mentors-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+            <img class = "hover-icon monthly-mentors-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+        </div>
+
+        <!-- Секция Recent Mentors - левая карточка -->      
+        <div class = "monthly-mentors-box__cards">
+        <div class = "monthly-mentors-box__cards_left-card">
+            <div class = "monthly-mentors-box__cards_card__profile">
+            <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_woman_and_leaves.png">
+            <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Jessica Jane</p>
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">Web Development</p>
+            </div>
+                <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+            </div>
+            <div class = "monthly-mentors-box__cards_card__profile-courses">
+            <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+            <p class = "monthly-mentors-box__cards_card__profile-courses-text">25 Tasks</p> 
+            </div>
+            <div class = "monthly-mentors-box__cards_card__reviews">
+            <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+            <p class = "monthly-mentors-box__cards_card__reviews-text">5,0 (800 Reviews)</p>
+            </div>
+        </div>
+
+        <!-- Секция Recent Mentors - правая карточка -->
+        <div class = "monthly-mentors-box__cards_right-card">
+            <div class = "monthly-mentors-box__cards_card__profile">
+                <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_long_hair.png">
+                <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Abraham Lincoln</p>
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">3D Design</p>
+                </div>
+                <p class = "monthly-mentors-box__cards_right-card__profile-follow">Followed</p>
+            </div>
+            <div class = "monthly-mentors-box__cards_card__profile-courses">
+                <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                <p class = "monthly-mentors-box__cards_card__profile-courses-text">32 Tasks</p> 
+            </div>
+            <div class = "monthly-mentors-box__cards_card__reviews">
+                <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                <p class = "monthly-mentors-box__cards_card__reviews-text">4,9 (510 Reviews)</p>
+            </div>
+        </div>
+
+        <!-- Секция Recent Mentors - 3 карточка -->
+        <div class = "monthly-mentors-box__cards_third-card">
+            <div class = "monthly-mentors-box__cards_card__profile">
+            <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_beard.jpeg">
+            <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Curious George</p>
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">UI UX Design</p>
+            </div>
+                <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+            </div>
+            <div class = "monthly-mentors-box__cards_card__profile-courses">
+            <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+            <p class = "monthly-mentors-box__cards_card__profile-courses-text">40 Tasks</p> 
+            </div>
+            <div class = "monthly-mentors-box__cards_card__reviews">
+            <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+            <p class = "monthly-mentors-box__cards_card__reviews-text">4,7 (750 Reviews)</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Секция Top Mentors -->
+    <div class = "top-mentors monthly-mentors-box">
+        <div class = "third-screen monthly-mentors-box__header">
+        <p class = "monthly-mentors-box__header_text">Top Mentors</p>
+        <div class = "monthly-mentors-box__header_icons-both">
+            <img class = "hover-icon monthly-mentors-box__header_icon-left" src="assets/icons/arrow-left.svg" />
+            <img class = "hover-icon monthly-mentors-box__header_icon-right" src="assets/icons/arrow-right.svg" />
+        </div>
+        </div>
+
+        <!-- Секция Top Mentors - левая карточка -->      
+        <div class = "monthly-mentors-box__cards">
+        <div class = "monthly-mentors-box__cards_left-card">
+            <div class = "monthly-mentors-box__cards_card__profile">
+            <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_woman_and_leaves.png">
+            <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Jessica Jane</p>
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">Web Development</p>
+            </div>
+                <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+            </div>
+            <div class = "monthly-mentors-box__cards_card__profile-courses">
+            <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+            <p class = "monthly-mentors-box__cards_card__profile-courses-text">25 Tasks</p> 
+            </div>
+            <div class = "monthly-mentors-box__cards_card__reviews">
+            <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+            <p class = "monthly-mentors-box__cards_card__reviews-text">5,0 (800 Reviews)</p>
+            </div>
+        </div>
+
+        <!-- Секция Top Mentors - правая карточка -->
+        <div class = "monthly-mentors-box__cards_right-card">
+            <div class = "monthly-mentors-box__cards_card__profile">
+                <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_long_hair.png">
+                <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Abraham Lincoln</p>
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">3D Design</p>
+                </div>
+                <p class = "monthly-mentors-box__cards_right-card__profile-follow">Followed</p>
+            </div>
+            <div class = "monthly-mentors-box__cards_card__profile-courses">
+                <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                <p class = "monthly-mentors-box__cards_card__profile-courses-text">32 Tasks</p> 
+            </div>
+            <div class = "monthly-mentors-box__cards_card__reviews">
+                <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                <p class = "monthly-mentors-box__cards_card__reviews-text">4,9 (510 Reviews)</p>
+            </div>
+        </div>
+
+        <!-- Секция Top Mentors - 3 карточка -->
+        <div class = "monthly-mentors-box__cards_third-card">
+            <div class = "monthly-mentors-box__cards_card__profile">
+            <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_beard.jpeg">
+            <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Curious George</p>
+                <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">UI UX Design</p>
+            </div>
+                <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+            </div>
+            <div class = "monthly-mentors-box__cards_card__profile-courses">
+            <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+            <p class = "monthly-mentors-box__cards_card__profile-courses-text">40 Tasks</p> 
+            </div>
+            <div class = "monthly-mentors-box__cards_card__reviews">
+            <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+            <p class = "monthly-mentors-box__cards_card__reviews-text">4,7 (750 Reviews)</p>
+            </div>
+        </div>
+    </div>
+        <!-- Секция Top Mentors - второй ряд -->      
+        <div class = "second-row monthly-mentors-box__cards">
+            <div class = "monthly-mentors-box__cards_left-card">
+                <div class = "monthly-mentors-box__cards_card__profile">
+                <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_woman_and_leaves.png">
+                <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Jessica Jane</p>
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">Web Development</p>
+                </div>
+                    <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+                </div>
+                <div class = "monthly-mentors-box__cards_card__profile-courses">
+                <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                <p class = "monthly-mentors-box__cards_card__profile-courses-text">25 Tasks</p> 
+                </div>
+                <div class = "monthly-mentors-box__cards_card__reviews">
+                <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                <p class = "monthly-mentors-box__cards_card__reviews-text">5,0 (800 Reviews)</p>
+                </div>
+            </div>
+    
+            <!-- Секция Top Mentors - правая карточка, второй ряд -->
+            <div class = "monthly-mentors-box__cards_right-card">
+                <div class = "monthly-mentors-box__cards_card__profile">
+                    <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_long_hair.png">
+                    <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Abraham Lincoln</p>
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">3D Design</p>
+                    </div>
+                    <p class = "monthly-mentors-box__cards_right-card__profile-follow">Followed</p>
+                </div>
+                <div class = "monthly-mentors-box__cards_card__profile-courses">
+                    <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                    <p class = "monthly-mentors-box__cards_card__profile-courses-text">32 Tasks</p> 
+                </div>
+                <div class = "monthly-mentors-box__cards_card__reviews">
+                    <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                    <p class = "monthly-mentors-box__cards_card__reviews-text">4,9 (510 Reviews)</p>
+                </div>
+            </div>
+    
+            <!-- Секция Top Mentors - 3 карточка, второй ряд -->
+            <div class = "monthly-mentors-box__cards_third-card">
+                <div class = "monthly-mentors-box__cards_card__profile">
+                <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_beard.jpeg">
+                <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Curious George</p>
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">UI UX Design</p>
+                </div>
+                    <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+                </div>
+                <div class = "monthly-mentors-box__cards_card__profile-courses">
+                <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                <p class = "monthly-mentors-box__cards_card__profile-courses-text">40 Tasks</p> 
+                </div>
+                <div class = "monthly-mentors-box__cards_card__reviews">
+                <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                <p class = "monthly-mentors-box__cards_card__reviews-text">4,7 (750 Reviews)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Секция Top Mentors - третий ряд -->      
+        <div class = "third-row monthly-mentors-box__cards">
+            <div class = "monthly-mentors-box__cards_left-card">
+                <div class = "monthly-mentors-box__cards_card__profile">
+                <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_woman_and_leaves.png">
+                <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Jessica Jane</p>
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">Web Development</p>
+                </div>
+                    <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+                </div>
+                <div class = "monthly-mentors-box__cards_card__profile-courses">
+                <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                <p class = "monthly-mentors-box__cards_card__profile-courses-text">25 Tasks</p> 
+                </div>
+                <div class = "monthly-mentors-box__cards_card__reviews">
+                <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                <p class = "monthly-mentors-box__cards_card__reviews-text">5,0 (800 Reviews)</p>
+                </div>
+            </div>
+    
+            <!-- Секция Top Mentors - правая карточка, третий ряд -->
+            <div class = "monthly-mentors-box__cards_right-card">
+                <div class = "monthly-mentors-box__cards_card__profile">
+                    <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_long_hair.png">
+                    <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Abraham Lincoln</p>
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">3D Design</p>
+                    </div>
+                    <p class = "monthly-mentors-box__cards_right-card__profile-follow">Followed</p>
+                </div>
+                <div class = "monthly-mentors-box__cards_card__profile-courses">
+                    <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                    <p class = "monthly-mentors-box__cards_card__profile-courses-text">32 Tasks</p> 
+                </div>
+                <div class = "monthly-mentors-box__cards_card__reviews">
+                    <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                    <p class = "monthly-mentors-box__cards_card__reviews-text">4,9 (510 Reviews)</p>
+                </div>
+            </div>
+    
+            <!-- Секция Top Mentors - 3 карточка, третий ряд -->
+            <div class = "monthly-mentors-box__cards_third-card">
+                <div class = "monthly-mentors-box__cards_card__profile">
+                <img class = "monthly-mentors-box__cards_card__profile-picture" src="assets/images/avatar_man_beard.jpeg">
+                <div class = "monthly-mentors-box__cards_card__profile-text-wrap">
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-title">Curious George</p>
+                    <p class = "monthly-mentors-box__cards_card__profile-text-wrap-subtitle">UI UX Design</p>
+                </div>
+                    <p class = "monthly-mentors-box__cards_left-card__profile-follow">+ Follow</p>
+                </div>
+                <div class = "monthly-mentors-box__cards_card__profile-courses">
+                <img class = "monthly-mentors-box__cards_card__profile-courses-icon" src="assets/icons/course.svg" />
+                <p class = "monthly-mentors-box__cards_card__profile-courses-text">40 Tasks</p> 
+                </div>
+                <div class = "monthly-mentors-box__cards_card__reviews">
+                <img class = "monthly-mentors-box__cards_card__reviews-icon" src="assets/icons/star.svg" />
+                <p class = "monthly-mentors-box__cards_card__reviews-text">4,7 (750 Reviews)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция с сайдбаром и логотипом -->
+    <div class = "sidebar-second-screen sidebar-box">
+      <div class = "sidebar-box-logo">
+        <img class = "sidebar-box-logo__icon" src="assets/icons/book-square.svg" />
+        <div class = "sidebar-box-logo__text">Task<br />MANAGER</div>
+        <nav class = "sidebar-box__navigation">
+          <a class = "sidebar-box__navigation-item" href = "/index">
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Overview</div> 
+            </div> 
+          </a>
+          <a class = "sidebar-box__navigation-item"  href = "/tasks"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/task.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Tasks</div>               
+            </div>
+          </a>
+          <!-- Навигация - Mentors (selected) -->
+          <a class = "sidebar-box__navigation-item__selected" href = "/mentors"> 
+            <div class = "sidebar-box__navigation-item__selected_group">
+              <img class = "sidebar-box__navigation-item__selected_group__icon" src="assets/icons/user_icon.svg" />
+              <div class = "sidebar-box__navigation-item__selected_group__text">Mentors</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/messages"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/message.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Messages</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/images"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/images_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Images</div>               
+            </div>
+          </a>
+          <a class = "sidebar-box__navigation-item" href = "/settings"> 
+            <div class = "sidebar-box__navigation-item__group">
+              <img class = "sidebar-box__navigation-item__group__icon" src="assets/icons/settings_icon.svg" />
+              <div class = "sidebar-box__navigation-item__group__text">Settings</div>               
+            </div>
+          </a>
+        </nav>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>  

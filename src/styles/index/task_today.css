@@ -1,0 +1,354 @@
+.task-today {
+    position: absolute;
+    width: 372px;
+    height: 777px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--primary-dark-byzantine-blue);
+    margin-left: 1022px;
+    margin-top: 195px;        
+}
+
+.task-today-header {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 265px;
+    margin-top: 21px;
+    margin-left: 24px;    
+}
+
+.task-today-header-text {
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
+}
+
+.task-today-image {
+    width: 324px;
+    height: 160px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 24px;
+    background: url(https://images.unsplash.com/photo-1568584263125-bf8f0a77d51c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2942&q=80), no-repeat;
+    background-size: 100% 100%;
+}
+
+.task-today__text-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.task-today__text-wrap-title {
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%;
+    letter-spacing: -0.32px;  
+}
+
+.task-today__text-wrap-subtitle {
+    color: var(--secondary-grey);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: normal;
+    letter-spacing: -0.24px;  
+}
+
+/* Progress */
+
+.task-today__progress {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.task-today__progress-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 172px;
+    margin-top: 20px;
+    margin-left: 24px;    
+}
+
+.task-today__progress-header_left-text {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px;
+}
+
+.task-today__progress-header_right-text {
+    display: flex;
+    width: 52px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-nebula-blue);
+    text-align: right;
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px;    
+}
+
+.task-today__progress__progress-bar-light-blue {
+    width: 324px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--primary-lavender-blue);
+    margin-top: 12px;
+    margin-left: 24px;
+}
+
+.task-today__progress__progress-bar-dark-blue {
+    width: 270px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 8px 0px 0px 8px;
+    background: var(--primary-nebula-blue);
+    position: absolute;
+}
+
+.task-today__progress__progress-bar-light-blue__circle {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: var(--primary-nebula-blue);
+    border: 2px solid var(--primary-anti-flash-white);
+    border-radius: 50%;
+    margin-left: 262px;
+    margin-top: -4px;
+}
+
+.task-today__deadline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 24px;    
+}
+
+.task-today__deadline-text {
+    display: flex;
+    width: 92px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px; 
+}
+
+.task-today__photos {
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 120px;
+}
+
+.task-today__photos_single {
+    margin-left: -8px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 200px;
+    border: 1.5px solid var(--primary-anti-flash-white);
+    background:lightgray 50% / cover no-repeat;
+}
+
+.task-today-divider {
+    position: absolute;
+    width: 324px;
+    height: 1px;
+    background: var(--primary-anti-flash-white);
+    margin-top: 430px;
+    margin-left: 24px;
+}
+
+.task-today-details-header {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 132px;
+    margin-top: 64px;
+    margin-left: 24px;
+}
+
+.task-today-details-header-left-text {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.32px;    
+}
+
+.task-today-details-header-right-text {
+    display: flex;
+    width: 92px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--secondary-grey);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.task-today-details-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.task-today-details-wrap-number-bg {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--primary-anti-flash-white);
+}
+
+.task-today-details-wrap-number-bg-text {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--secondary-eigengrau);
+    text-align: center;
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
+}
+
+.task-today-details-wrap-text {
+    display: flex;
+    width: 276px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
+}
+
+.task-today-button {
+    width: 324px;
+    height: 44px;
+    margin-top: 56px;
+    margin-left: 24px;
+    border-radius: 10px;
+    border: none;
+    background: var(--primary-nebula-blue);
+    /* Внутренний текст */
+    color: var(--primary-anti-flash-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
+}
+
+/* Псевдокласс hover */
+
+.task-today-header-icon:hover {
+    cursor: pointer;
+}
+
+.task-today__photos {
+    cursor: pointer;
+}
+
+.task-today__text-wrap {
+    cursor: pointer;
+}
+
+/* Отображение на экранах меньше 1100px */
+
+@media screen and (max-width: 1100px) {
+    .task-today {
+      width: 328px;
+      height: 160px;
+      margin-left: 528px;
+      margin-top: 992px;
+    }
+    .task-today-header {
+      gap: 220px;
+    }
+    .task-today-image {
+      display: none;
+    }
+    .task-today__progress {
+      display: none;
+    }
+    .task-today__deadline {
+      margin-top: 19px;  
+    }
+    .task-today__photos {
+      display: none;  
+    }
+    .task-today-details-header {
+      display: none;
+    }
+    .task-today-details-wrap {
+      display: none;
+    }
+    .task-today-divider {
+      display: none;  
+    }
+    .task-today-button {
+      display: none;
+    }
+  }

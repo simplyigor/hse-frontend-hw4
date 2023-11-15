@@ -1,0 +1,187 @@
+.explore-tasks {
+    position: absolute;
+    width: 1048px;
+    height: 182px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--primary-dark-byzantine-blue);
+    margin-left: 306px;
+}
+
+.explore-tasks-header {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 960px;
+    gap: 608px;
+}
+
+.explore-tasks-header-left-text {
+    display: flex;
+    width: 252px;
+    height: 52px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: var(--font-family-plus-jakarta);
+    font-weight: var(--font-weight-normal);
+    color: var(--primary-magnolia-white);
+    font-size: var(--font-size-xl);
+    letter-spacing: -0.72px;
+    font-style: normal;   
+}
+
+.explore-tasks-header-right-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px; 
+}
+
+.explore-tasks-header-right-wrapper-profile {
+    width: 62px;
+    height: 62px;
+    border-radius: 200px;
+    background: cover no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.explore-tasks-header-right-wrapper-icon {
+    z-index: 1;
+}
+
+.explore-tasks-form-search-bar {
+    margin-left: 32px;
+    margin-top: 20px;
+    width: 480px;
+    height: 52px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-anti-flash-white);
+    background: none;
+    /* Типографика */
+    color: var(--primary-anti-flash-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-extra-light);
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
+
+.explore-tasks-form-icon {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 36px;
+    z-index: 1;
+}
+
+.explore-tasks-filter-block {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.explore-tasks-filter-block-category {
+    position: absolute;
+    width: 148px;
+    height: 52px;
+    margin-left: 652px;
+    margin-top: -65px;
+    display: flex;
+    padding: 14px 28px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-magnolia-white);
+    z-index: 1;    
+}
+
+.explore-tasks-filter-block-sort {
+    position: absolute;
+    width: 196px;
+    height: 52px;
+    margin-left: 824px;
+    margin-top: -65px;
+    display: flex;
+    padding: 14px 28px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-magnolia-white);
+    z-index: 1;    
+}
+
+.explore-tasks-filter-block-category-text {
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.explore-tasks-filter-block-sort-text {
+    color: var(--primary-magnolia-white);
+    font-family: var(--font-family-plus-jakarta);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: normal;
+    letter-spacing: -0.24px;    
+}
+
+/* Псевдокласс hover */
+
+.explore-tasks-header-right-wrapper-icon:hover {
+    cursor: pointer;
+}
+
+.explore-tasks-form-icon:hover {
+    cursor: pointer;
+}
+
+.explore-tasks-header-right-wrapper-profile:hover {
+    cursor: pointer;
+}
+
+.explore-tasks-filter-block:hover {
+    cursor: pointer;
+}
+
+/* Псевдокласс hover */
+
+@media screen and (max-width: 1100px) {
+    .explore-tasks {
+      margin-left: 170px;
+      width: 686px;
+    }
+    .explore-tasks-header {
+        width: 480px;
+    }
+    .explore-tasks-form-search-bar {
+        width: 350px;
+    }
+    .explore-tasks-filter-block-category {
+        width: 80px;
+        margin-left: 468px;
+    }
+    .explore-tasks-filter-block-sort {
+        width: 80px;
+        margin-left: 572px;
+    }
+    .explore-tasks-filter-block-category-text {
+        display: none;
+    }
+    .explore-tasks-filter-block-sort-text {
+        display: none;
+    }
+    .explore-tasks-header-right-wrapper {
+        margin-left: -354px;
+    }
+  }
+

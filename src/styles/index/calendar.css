@@ -1,0 +1,122 @@
+.calendar {
+    position: absolute;
+    background-color: var(--primary-dark-byzantine-blue);
+    border-radius: 10px;
+    width: 372px;
+    height: 160px;
+    margin-left: 1022px;
+  }
+
+.calendar-header {
+  margin-top: 24px;
+  margin-left: 24px;
+  align-items: center;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 106px;
+}
+
+.calendar-header-text {
+  color: var(--primary-magnolia-white);
+  text-align: center;
+  font-family: var(--font-family-plus-jakarta);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: 150%; /* 21px */  
+}
+
+.calendar-dates {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 36px;
+  margin-left: 20px;  
+}
+
+.calendar-dates-single {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;  
+}
+
+.calendar-dates-single-text {
+  color: var(--primary-magnolia-white);
+  text-align: center;
+  font-family: var(--font-family-plus-jakarta);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.calendar-dates-single-circle {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--primary-anti-flash-white);  
+}
+
+.calendar-dates-single-circle-current {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--primary-nebula-blue);  
+}
+
+.calendar-dates-single-circle-text {
+  color: var(--secondary-eigengrau);
+  text-align: center;
+  font-family: var(--font-family-plus-jakarta);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.calendar-dates-single-circle-text-current {
+  color: var(--primary-magnolia-white);
+  text-align: center;
+  font-family: var(--font-family-plus-jakarta);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  line-height: normal;
+  letter-spacing: -0.24px; 
+}
+
+/* Псевдокласс hover */
+
+.calendar-header-left-icon, .calendar-header-right-icon:hover {
+  cursor: pointer;
+}
+
+.calendar-header-text {
+  cursor: pointer;
+}
+
+/* Отображение на экранах меньше 1100px */
+
+@media screen and (max-width: 1100px) {
+    .calendar {
+      width: 326px;
+      margin-left: 170px;
+      margin-top: 992px;
+    }
+    .first-date {
+      display: none;
+    }
+    .calendar-header {
+      gap: 83px;
+    }
+  }
